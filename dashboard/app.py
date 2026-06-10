@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # ── Load data from Supabase ──
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=300)
 def load_data():
     engine = create_engine(DATABASE_URL)
     metrics = pd.read_sql("SELECT * FROM calculated_metrics", engine)
