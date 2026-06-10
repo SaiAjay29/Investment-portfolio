@@ -40,9 +40,8 @@ def start_scheduler():
     # Run once immediately on start
     run_pipeline()
 
-    while True:
-        schedule.run_pending()
-        time.sleep(60)
+    if __name__ == "__main__":
+    run_pipeline())
 
 if __name__ == "__main__":
     start_scheduler()
