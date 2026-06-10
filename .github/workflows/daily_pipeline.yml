@@ -32,4 +32,4 @@ jobs:
       - name: Run pipeline
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: python pipeline.py
+        run: python orchestrate/pipeline.py
